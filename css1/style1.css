@@ -1,0 +1,126 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color:#e0f0e7;
+  height: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+
+.header-left{
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.header-left a{
+  text-decoration: none;
+}
+
+
+.naikagekaseikei{
+  font-size: 20px;
+}
+
+.header-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.phonenumber{
+  color: orange;
+  font-size: 25px;
+}
+
+
+/* headerここまで */
+
+/* ここから background */
+.background{
+  background-image: url(../img/診療.jpg);
+  height:30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color:black;
+}
+
+.category1{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+
+
+.category1 a{
+  padding: opx;
+  text-decoration: none;
+}
+
+/* categoryここまで */
+
+/* ここからmain-content */
+.main-content{
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+
+.main-left{
+  width: 75%;
+}
+
+.main-right{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ここから整形外科とは */
+.seikeigekatoha{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+/* ここからfooter */
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+
+}
+
+.footer_map{
+  width: 50vw;
+}
+
+.footer-right{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.footer-right 
