@@ -6,6 +6,10 @@
   <title>診療案内</title>
   <link rel="stylesheet" href=".//css1/reset.css">
   <link rel="stylesheet" href=".//css1/style1.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="./JS1/app1.js"></script>
+
+
 </head>
 <body>
   <header>
@@ -26,6 +30,11 @@
   </header>
 
   <main>
+    <a href="#header" title="ページトップへ戻る">
+      <img class="pagetop"  src="./img/pagetop02.png" alt="△PAGE TOP">
+    </a>
+
+    
 
 
     <div class="background"><p>診療案内</p></div>
@@ -82,7 +91,13 @@
 
       </div>
       <div class="main-right">
-        <h1>test</h1>
+        <dl class="toggle-menu">
+          <dt id="q8-btn">診療案内</dt>
+          <dd style="display: none;">一般整形</dd>
+          <dd style="display: none;">小児整形</dd>
+          <dd style="display: none;">スポーツ整形</dd>
+          <dd style="display: none;">リハ整形</dd>
+        </dl>
       </div>
 
     </div>
@@ -94,45 +109,59 @@
           </div>
       </div>
       <div class="footer-right">
-        <p>横浜クリニック</p>
-        <table class="tb01">
-          <tbody>
-          <tr>
-          <th>診療時間/受付時間</th>
-          <th>月</th>
-          <th>火</th>
-          <th>水</th>
-          <th>木</th>
-          <th>金</th>
-          <th>土</th>
-          </tr>
-          <tr>
-          <th>09:00-12:00</th>
-          <td>●</td>
-          <td>●</td>
-          <td>●</td>
-          <td>●</td>
-          <td>●</td>
-          <td>▲</td>
-          </tr>
-          
-          <tr>
-          <th>15:00-19:00</th>
-          <td>●</td>
-          <td>●</td>
-          <td>●</td>
-          <td>●</td>
-          <td>●</td>
-          <td>-</td>
-          </tr>
-          </tbody>
-          </table>
-          
-          <p>
-            △土曜日…9:00-14:00(受付13:00まで)<br>
-            休診日…土曜午後・日曜・祝日
-          </p>
+        <div class="footer-right-top">
+          <div>
+            <p>横浜クリニック</p>
+            <table class="tb01">
+              <tbody>
+              <tr>
+              <th>診療時間/受付時間</th>
+              <th>月</th>
+              <th>火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th>土</th>
+              </tr>
+              <tr>
+              <th>09:00-12:00</th>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>▲</td>
+              </tr>
+              
+              <tr>
+              <th>15:00-19:00</th>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>●</td>
+              <td>-</td>
+              </tr>
+              </tbody>
+              </table>
+              
+              <p>
+                △土曜日…9:00-14:00(受付13:00まで)<br>
+                休診日…土曜午後・日曜・祝日
+              </p>
+          </div>
+
+        </div>
+
+        <div class="footer-right-bottom">
+          <!-- <button class="page-top">ぺ―ジトップへ</button> -->
+        </div>
+        
       </div>
+
+
+
+
 
     </footer>
 

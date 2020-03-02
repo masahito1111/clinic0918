@@ -20,7 +20,92 @@ header{
 
 .header-left a{
   text-decoration: none;
+  color: blue;
 }
+
+
+.pagetop
+    {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    }
+ 
+.pagetop a
+    {
+    display: block;
+    text-decoration: none;
+    }
+ 
+.pagetop:hover
+{
+    opacity: 0.85 ;
+}
+
+/* --- 全体のBOX定義 ---------------------------------------- */
+.box {
+  position   : relative;
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* --- 背景の指定 ------------------------------------------- */
+.box .bgImg {
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  bottom     : 0;
+  right      : 0;
+  opacity    : 0;
+  animation  : bgAnime 12s infinite;   /* 4画像 × 各1s = 4s */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.box .src1 {
+  background-image : url(../img/gptImage20060107170020.jpg);   /* 背景の画像を指定 */
+}
+.box .src2 {
+  background-image : url(../img/slide_001.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 3s;
+}
+.box .src3 {
+  background-image : url(../img/slide_002.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 6s;
+}
+.box .src4 {
+  background-image : url(../img/slide_003.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 9s;
+}
+
+@keyframes bgAnime {
+   0% { opacity: 0; }
+   10% { opacity: 1; }
+  25% { opacity: 1; }
+  35% { opacity: 0; }
+ 100% { opacity: 0; }
+}
+
+/* --- 前面の文字定義（サンプルのため変更してください） ----- */
+.box .boxString{
+  position   : absolute;
+  display    : inline-block;
+  padding    : 20px;
+  background : rgba(0, 127, 255, 0.7);          /* 半透明の青 */
+  color      : #fff;
+  top        : 50%;                               /* 中央寄せ */
+  left       : 50%;
+  transform  : translate(-50%,-50%);
+  z-index    : 11;
+}
+</style>
+
+
+
+
+
 
 
 .naikagekaseikei{
@@ -39,12 +124,12 @@ header{
   font-size: 25px;
 }
 
-.background{
+/* .background{
   background-image: url(../img/gptImage20060107170020.jpg);
   height:100vh;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 .category1{
   display: flex;
@@ -81,7 +166,7 @@ header{
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 60vh;
 }
 
 .koumoku{
@@ -94,7 +179,7 @@ header{
 
 .koumoku a{
   text-decoration: none;
-  height: 40vh;
+  height: 20vh;
   width: 15vw;
   display: flex;
   align-items: center;
@@ -135,23 +220,52 @@ header{
 
 
 
+
+/* ここからfooter */
 footer{
   display: flex;
-  justify-content: space-between;
   background-color: #f7f7f7;
 
 }
 
+
 .footer_map{
-  width: 50vw;
+  width: 48vw;
 }
 
+.footer-left{
+  width: 48vw;
+
+}
+
+
 .footer-right{
-  width: 50vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;  
 }
 
-.footer-right 
+.footer-bottom{
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-right-top{
+  height: 100%;
+  width: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right-bottom{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+

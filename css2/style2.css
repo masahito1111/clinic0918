@@ -20,6 +20,8 @@ header{
 
 .header-left a{
   text-decoration: none;
+  color: blue;
+
 }
 
 
@@ -42,10 +44,31 @@ header{
 
 /* headerここまで */
 
+
+/* ここからmain */
+.pagetop
+    {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    }
+ 
+.pagetop a
+    {
+    display: block;
+    text-decoration: none;
+    }
+ 
+.pagetop:hover
+{
+    opacity: 0.85 ;
+}
+
+
 /* ここから background */
 .background{
   background-image: url(../img/診療.jpg);
-  height:30vh;
+  height:50vh;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -75,26 +98,153 @@ header{
 /* categoryここまで */
 
 
+/* ここからclinic_sec */
+.clinic_sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+/* ここからiingaiyou */
+
+main{
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+.iingaiyou{
+  display: flex;
+  flex-direction: row;
+  
+}
+.iingaiyou_left{
+  margin-right: 150px;
+}
+
+/* iingaiyouここまで */
+/* ここからsetubisyoukai */
+
+.setubisyoukai{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+ 
+
+}
+
+.echo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.echo-image{
+  background-image: url(../img/echo.jpg);
+  height: 30vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.X-ray{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.X-ray-image{
+  background-image: url(../img/X-ray.png);
+  height: 30vh;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.MRI{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.MRI-image{
+  background-image: url(../img/MRI.jpg);
+  height: 30vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+
+
+/* ここからfooter */
 
 /* ここからfooter */
 footer{
   display: flex;
-  justify-content: space-between;
   background-color: #f7f7f7;
+  width: 100%;
 
 }
+
 
 .footer_map{
-  width: 50vw;
+  width: 48vw;
 }
 
+.footer-left{
+  width: 48vw;
+
+}
+
+
 .footer-right{
-  width: 50vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;  
 }
 
-.footer-right 
+.footer-bottom{
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-right-top{
+  height: 100%;
+  width: 100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right-bottom{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
